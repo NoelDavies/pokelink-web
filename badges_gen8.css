@@ -1,0 +1,59 @@
+
+.badge__slot.badge_slot--gen8.badge_slot--grass {
+    width: 523px;
+    left: 341px;
+    position: absolute;
+    top: 461px;
+}
+
+.badge__slot.badge_slot--gen8.badge_slot--water {
+    left: 529px;
+    position: absolute;
+    top: -11px;
+}
+
+.badge__slot.badge_slot--gen8.badge_slot--fire {
+    left: 241px;
+    position: absolute;
+    top: 232px;
+}
+
+.badge__slot.badge_slot--gen8.badge_slot--fighting {
+    display: block;
+    left: 14px;
+    position: absolute;
+    top: 422px;
+}
+
+.badge__slot.badge_slot--gen8.badge_slot--fairy {
+    width: 690px;
+    left: 454px;
+    position: absolute;
+    top: 219px;
+}
+
+.badge__slot.badge_slot--gen8.badge_slot--rock {
+    left: 306px;
+    position: absolute;
+    top: -121px;
+}
+
+.badge__slot.badge_slot--gen8.badge_slot--ice {
+    left: 306px;
+    position: absolute;
+    top: -121px;
+}
+
+.badge__slot.badge_slot--gen8.badge_slot--dark {
+    left: 127px;
+    position: absolute;
+    top: 68px;
+}
+
+.badge__slot.badge_slot--gen8.badge_slot--dragon {
+    position: absolute;
+    left: -115px;
+    width: 679px;
+    top: 0px;
+    height: auto;
+}

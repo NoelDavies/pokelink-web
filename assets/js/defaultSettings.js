@@ -352,6 +352,10 @@ var defaultSettings = {
     'darumaka': { 'galar': 'darumaka-galar' },
     'yamask': { 'galar': 'yamask-galar' },
     'stunfisk': { 'galar': 'stunfisk-galar' },
+    'urshifu': {
+      'single': 'urshifu',
+      'rapid': 'urshifu-rapid'
+    },
 
     'meowth': { 'alola': 'meowth-alola', 'galar': 'meowth-galar' },
 
@@ -494,8 +498,13 @@ var defaultSettings = {
       'melmetal',
       'toxtricity',
       'garbodor'
+    ],
+    'galar': [
+      'slowpoke',
+      'slowbro'
     ]
   },
+
 
   natures: {
     'hardy': { increase: 'atk', decrease: 'atk' },

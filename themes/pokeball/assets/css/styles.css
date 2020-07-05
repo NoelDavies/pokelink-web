@@ -6,8 +6,9 @@
         margin: 0;
         background-color: transparent !important;
     }
+
     body {
-        background-color: transparent  !important;
+        background-color: transparent !important;
     }
 
     @font-face{font-family:PokemonGB;src:local("Pokemon GB"),url("../../../../assets/fonts/Pokemon%20GB.ttf")}
@@ -18,6 +19,7 @@
         margin-left: 10px;
         background: url('../../../../assets/pokeball.png') no-repeat;
         background-size: contain;
+        background-color: transparent !important;
     }
 
     .pokemon__image {
@@ -61,10 +63,15 @@
         font-size: 11px;
         font-family: "PokemonGB";
         color: white;
+        text-shadow: black 1px 1px 1px;
     }
 
     .pokemon__hp {
         text-align: right;
+    }
+
+    .pokemon__hp-bar {
+        margin-top: 4px;
     }
 
     .pokemon__dead-label {
@@ -149,8 +156,41 @@
     font-size: 5rem;
     color: #fff;
     vertical-align: middle;
+    background-color: transparent !important;
 }
 
 .browser-connected {
     display: block !important;
+    background-color: transparent !important;
 }
+
+#party {
+    background-color: transparent !important;
+}
+
+/** Stripped from Bootstrap **/
+.progress {
+    height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+.progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #337ab7;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+/***/

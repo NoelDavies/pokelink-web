@@ -44,6 +44,7 @@ function transformPokemon(pokemon) {
         case 'gmax':
         case 'mega':
         case 'megay':
+        case 'galar':
         case 'megax':
           filename += '-' + pokemon.alternateForm
           break

@@ -1,0 +1,47 @@
+.badge__slot.badge--dragon {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+fighting {
+    display: block;
+    width: 391px;
+    left: 101px;
+    position: absolute;
+    top: 326px;
+}
+Rock  {
+   /* display: block; */
+    /* width: 386px; */
+    left: 306px;
+    position: absolute;
+    top: -121px;
+}
+
+Water {
+    /* display: block; */
+    /* width: 386px; */
+    left: 529px;
+    position: absolute;
+    top: -11px;
+}
+
+Fire Badge {
+    /* display: block; */
+    /* width: 386px; */
+    left: 241px;
+    position: absolute;
+    top: 232px;
+
+}
+
+
+Fire Badge {
+    /* display: block; */
+    /* width: 386px; */
+    left: 241px;
+    position: absolute;
+    top: 232px;
+
+}

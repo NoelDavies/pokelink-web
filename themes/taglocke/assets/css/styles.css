@@ -1,0 +1,49 @@
+.pokes {
+
+}
+
+.pokes.browser-connected {
+  display: block !important;
+}
+
+.pokemon__list {
+  display: grid;
+  grid-template-columns: repeat(3, 205px);
+  grid-template-rows: repeat(2, 123px);
+  column-gap: 37px;
+  row-gap: 32px;
+}
+
+.pokemon__list .pokemon {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  background-color: #aa52fb;
+  overflow: hidden;
+}
+
+.pokemon__list .pokemon .sprite {
+  max-height: 100%;
+  min-width: 100%;
+  overflow: hidden;
+}
+
+.pokemon__list .pokemon .pokemon__details {
+  display: block;
+}
+
+.pokemon__list .pokemon .pokemon__details .details__name {
+  font-weight: bold;
+  color: #c0c0c0;
+}
+
+.pokemon__list .pokemon .pokemon__details .details__hp {
+  border: 1px solid #000000;
+  height: 5px;
+  width: 100%;
+}
+
+.pokemon__list .pokemon .pokemon__details .details__hp .hp__bar {
+  background-color: #ff0000;
+  height: 5px;
+}

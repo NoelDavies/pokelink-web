@@ -13,6 +13,7 @@ var themeSettings = {
         // false to disable, can be a hex color, can be an rgb or rgba value, can also be an html color name
         // like red, or pink etc... https://htmlcolorcodes.com/ works as a color picker
         staticColor: false,
+        fileType: 'png',
 
         // switch to columns instead of rows
         verticalPokemon: false,
@@ -26,6 +27,7 @@ var themeSettings = {
     },
 
     imgPaths: {
-        party: 'http://pokelink.cybershade.org/assets/sprites/pokemon/national/animated/',
+        // party: 'http://pokelink.cybershade.org/assets/sprites/pokemon/national/animated/',
+        party: 'http://pokelink.cybershade.org/assets/sprites/pokemon/home/normal/',
     }
 };

@@ -1,7 +1,7 @@
 Vue.component( "Pokemon", {
   template: `
     <div :class="{ 'pokemon': true, 'isDead': isDead, isDamaged: justTookDamage }">
-      <div v-if="typeof pokemon == 'object'" style="position: relative;">        
+      <div style="position: relative;">
         <svg height="137" width="135">
           <polyline
             points="100 3, 130 30, 130 70, 100 100"
@@ -36,16 +36,15 @@ Vue.component( "Pokemon", {
             :style="{'stroke-dasharray': '125', 'stroke-dashoffset': 125-((125/100)*experienceRemaining), 'transition': '1s ease-in-out', 'stroke-linecap': 'round', 'stroke': '#00b0ff'}"
           ></polyline>
       </svg>
-      
-      <div class="pokemon__name">
+
+      <div class="pokemon__name" v-if="typeof pokemon == 'object'" >
         {{pokemon.nickname}}
       </div>
 
-      <div class="pokemon__image">
+      <div class="pokemon__image" v-if="typeof pokemon == 'object'" >
         <img v-if="pokemon.isEgg" class="sprite" :src="pokemon.img" style="transform: scale(0.8); bottom: 0px;" />
         <img v-else class="sprite" :src="pokemon.img" />
       </div>
-      <div v-else></div>
     </div>
   `,
   props: {
@@ -63,6 +62,7 @@ Vue.component( "Pokemon", {
   },
   computed: {
     healthPercent() {
+      if (typeof this.pokemon === "undefined") { return 0; }
       return (100/this.pokemon.hp.max) * this.pokemon.hp.current;
     },
     isDead () {
@@ -110,6 +110,7 @@ Vue.component( "Pokemon", {
       return '';
     },
     experienceRemaining () {
+      if (typeof this.pokemon === "undefined") { return 0; }
       try {
         const expGroup = exp_groups_table.find(group => this.pokemon.species === group.id)
         const levelExp = experience_table.filter((expRange) => {

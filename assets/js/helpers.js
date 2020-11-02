@@ -56,7 +56,11 @@ function transformPokemon(pokemon) {
         default:
           filename = settings.pokemonForms[pokemon.speciesName.toLowerCase()][pokemon.alternateForm];
       }
-    } else if (pokemon.isFemale == true && settings.pokemonForms['female'].indexOf(pokemon.speciesName.toLowerCase()) !== -1) {
+    } else if (
+      pokemon.isFemale == true &&
+      settings.pokemonForms['female'].indexOf(pokemon.speciesName.toLowerCase()) !== -1
+      && settings.ignoreFemaleForms === false
+    ) {
       filename += '-f';
     }
   }
